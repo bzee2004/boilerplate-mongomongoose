@@ -1,5 +1,6 @@
 require('dotenv').config();
-require('mongoose');
+const mongoose = require('mongoose');
+mongoose.connect("process.env.MONGO_URI");
 
 mongoose.connect("mongodb+srv://user-freeCode:TeamFire32123!@cluster0.g2yowoa.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0", 
 { useNewUrlParser: true, useUnifiedTopology: true });
